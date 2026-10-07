@@ -3,5 +3,3 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 ExplodeLibrary(char*, unsigned char) | brickbreaker.so
-USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | brickbreaker.so
-USBIO::JoystickFound() | brickbreaker.so
