@@ -1,0 +1,37 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+BitmapConvPal(_RADBitmap*, _RADBitmap*, unsigned char) | brickbreaker.so
+BitmapGetPixel(_RADBitmap*, unsigned long, unsigned long) | brickbreaker.so
+ExplodeLibrary(char*, unsigned char) | brickbreaker.so
+ProcessRTPackets() | brickbreaker.so
+MouseX() | brickbreaker.so
+MouseY() | brickbreaker.so
+PlayWave(char*, unsigned short, int, int, int, bool) | brickbreaker.so
+QueFlush(bool) | brickbreaker.so
+BitmapBox(_RADBitmap*, unsigned long, unsigned long, unsigned long, unsigned long, unsigned char) | brickbreaker.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | brickbreaker.so
+WorldClass::WorldClass() | brickbreaker.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | brickbreaker.so
+USBIO::JoystickFound() | brickbreaker.so
+Bitmap::DeCompress32() | brickbreaker.so
+Sprite::AssignString(String*, unsigned long) | brickbreaker.so
+Sprite::ChangeString(char const*, unsigned long) | brickbreaker.so
+Sprite::ProcessAssignedString() | brickbreaker.so
+Sprite::Enable(unsigned long) | brickbreaker.so
+Sprite::Disable(unsigned long, bool) | brickbreaker.so
+Sprite::SetCord(float, float, float, unsigned long) | brickbreaker.so
+Sprite::SetSize(int, int) | brickbreaker.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | brickbreaker.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | brickbreaker.so
+vtable for DOSLinuxWorld | brickbreaker.so
+blit | brickbreaker.so
+clear_bitmap | brickbreaker.so
+create_bitmap_ex | brickbreaker.so
+destroy_bitmap | brickbreaker.so
+mouse_pos | brickbreaker.so
+position_mouse | brickbreaker.so
+screen | brickbreaker.so
+set_alpha_blender | brickbreaker.so
+set_trans_blender | brickbreaker.so
